@@ -12,7 +12,7 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top row">
-            <div class="col-10">
+            <div class="col-9">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="./">Home</a>
@@ -28,11 +28,15 @@
 
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active border border-primary rounded" href="./officer-login.html">Officer
                             Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active border bg-primary text-white border-primary rounded"
+                            href="./admin-login.html">Admin Login</a>
                     </li>
                 </ul>
             </div>
@@ -43,14 +47,14 @@
         <div class="col-4">
             <h1 class="m-5 text-center shadow-lg">Assign Crime</h1>
             <form class="bg-light p-5 mb-5">
-                <!-- <span class="text-danger">{error}</span>
-                <span class="text-success">{success}</span> -->
+                <div class="form-group">
+                    <label>Caase ID</label>
+                    <input type="number" class="form-control" id="case-id" placeholder="0023" disabled>
+                </div>
                 <div class="form-group">
                     <label>Do you want to remain Anonymous?</label>
                     <select id="type" class="form-control" disabled>
-                        <!-- <option></option> -->
                         <option>NO</option>
-                        <!-- <option>YES</option> -->
                     </select>
                 </div>
                 <div class="form-group">
@@ -76,9 +80,6 @@
                 <div class="form-group">
                     <label>Category of Crime</label>
                     <select id="type" class="form-control" disabled>
-                        <!-- <option></option>
-                        <option>Type A</option> -->
-                        <!-- <option>Type B</option> -->
                         <option>Type C</option>
                     </select>
                 </div>
@@ -97,10 +98,7 @@
                 <div class="form-group">
                     <label>Crime LGA</label>
                     <select id="crime-lga" class="form-control" disabled>
-                        <!-- <option></option> -->
                         <option>LGA A</option>
-                        <!-- <option>LGA B</option> -->
-                        <!-- <option>LGA C</option> -->
                     </select>
                 </div>
                 <div class="form-group">

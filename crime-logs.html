@@ -1,133 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crime Logs</title>
-    <link rel="stylesheet" href="./styles/bootstrap.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crime Logs</title>
+  <link rel="stylesheet" href="./styles/bootstrap.css">
 </head>
+
 <body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top row">
-                <div class="col-10">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                           <a class="nav-link" href="./">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link active" href="./crime-logs.html">Log History</a>
-                        </li>                        
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top row">
+      <div class="col-9">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" href="./crime-logs.html">Log History</a>
+              </li>
 
-                            <li class="nav-item">
-                               <a class="nav-link active bg-primary rounded text-white" href="./report-crime.html">Log a Crime</a>
-                            </li>
+              <li class="nav-item">
+                  <a class="nav-link active bg-primary rounded text-white" href="./report-crime.html">Log a
+                      Crime</a>
+              </li>
 
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="navbar-nav">
-                            <li class="nav-item">
-                               <a class="nav-link active border border-primary rounded" href="./officer-login.html">Officer Login</a>
-                            </li>
-                    </ul>
-                </div>
-        </nav>
+          </ul>
+      </div>
+      <div class="col-3">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active border border-primary rounded" href="./officer-login.html">Officer
+                      Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active border bg-primary text-white border-primary rounded"
+                      href="./admin-login.html">Admin Login</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <h2 class="h2 text-center mt-5">Crime Logs</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Home Address</th>
+          <th scope="col">Email</th>
+          <th scope="col">Date of Reporting</th>
+          <th scope="col">Crime Type</th>
+          <th scope="col">Place of Crime</th>
+          <th scope="col">LGA</th>
+          <th scope="col">Casualty</th>
+          <th scope="col">Crime Status</th>
+          <th scope="col">Case ID</th>
+          <th scope="col">Crime Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Anonymous</td>
+          <td>Anonymous</td>
+          <td>NONE</td>
+          <td>NONE</td>
+          <td>NONE</td>
+          <td>11/30/2022</td>
+          <td>Motor Accident</td>
+          <td>Bannex</td>
+          <td>AMAC</td>
+          <td>0</td>
+          <td>CLOSED</td>
+          <td>2345</td>
+          <td>Motor A hit motor B</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Amaka</td>
+          <td>Ibrahim</td>
+          <td>08012345678</td>
+          <td>Central Area</td>
+          <td>gmail.com</td>
+          <td>10/30/2022</td>
+          <td>Robbery</td>
+          <td>Garki</td>
+          <td>AMAC</td>
+          <td>0</td>
+          <td>ASSIGNED</td>
+          <td>4127</td>
+          <td>Robbery attack on the highway</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Anonymous</td>
+          <td>Anonymous</td>
+          <td>NONE</td>
+          <td>NONE</td>
+          <td>NONE</td>
+          <td>09/29/2022</td>
+          <td>Fire</td>
+          <td>Lokogoma</td>
+          <td>AMAC</td>
+          <td>0</td>
+          <td>ASSIGNED</td>
+          <td>5986</td>
+          <td>Fire Outbreak</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Ade</td>
+          <td>Johnson</td>
+          <td>08012651239</td>
+          <td>Nyanya</td>
+          <td>yahoo.com</td>
+          <td>10/07/2022</td>
+          <td>Damage of Property</td>
+          <td>Kubwa</td>
+          <td>AMAC</td>
+          <td>1</td>
+          <td>OPEN</td>
+          <td>0023</td>
+          <td>Properties were damaged</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="row mb-5">
+      <div class="col text-center">
+        <a href="./" class="btn btn-primary inline-block">Go Home</a>
+      </div>
     </div>
-
-    <div class="container-fluid mt-5">
-        <h2 class="h2 text-center mt-5">Crime Logs</h2>
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Phone Number</th>
-                <th scope="col">Home Address</th>
-                <th scope="col">Email</th>
-                <th scope="col">Date of Reporting</th>
-                <th scope="col">Crime Type</th>
-                <th scope="col">Place of Crime</th>
-                <th scope="col">LGA</th>
-                <th scope="col">Casualty</th>
-                <th scope="col">Crime Status</th>
-                <th scope="col">Case ID</th>
-                <th scope="col">Crime Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Anonymous</td>
-                <td>Anonymous</td>
-                <td>NONE</td>
-                <td>NONE</td>
-                <td>NONE</td>
-                <td>11/30/2022</td>
-                <td>Motor Accident</td>
-                <td>Bannex</td>
-                <td>AMAC</td>
-                <td>0</td>
-                <td>CLOSED</td>
-                <td>2345</td>
-                <td>Motor A hit motor B</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Amaka</td>
-                <td>Ibrahim</td>
-                <td>08012345678</td>
-                <td>Central Area</td>
-                <td>gmail.com</td>
-                <td>10/30/2022</td>
-                <td>Robbery</td>
-                <td>Garki</td>
-                <td>AMAC</td>
-                <td>0</td>
-                <td>ASSIGNED</td>
-                <td>4127</td>
-                <td>Robbery attack on the highway</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Anonymous</td>
-                <td>Anonymous</td>
-                <td>NONE</td>
-                <td>NONE</td>
-                <td>NONE</td>
-                <td>09/29/2022</td>
-                <td>Fire</td>
-                <td>Lokogoma</td>
-                <td>AMAC</td>
-                <td>0</td>
-                <td>ASSIGNED</td>
-                <td>5986</td>
-                <td>Fire Outbreak</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Ade</td>
-                <td>Johnson</td>
-                <td>08012651239</td>
-                <td>Nyanya</td>
-                <td>yahoo.com</td>
-                <td>10/07/2022</td>
-                <td>Damage of Property</td>
-                <td>Kubwa</td>
-                <td>AMAC</td>
-                <td>1</td>
-                <td>OPEN</td>
-                <td>0023</td>
-                <td>Properties were damaged</td>
-              </tr>
-            </tbody>
-          </table>
-        <div class="row mb-5">
-            <div class="col text-center">
-                <a href="./" class="btn btn-primary inline-block">Go Home</a>
-            </div>
-        </div>
-    </div>
+  </div>
 </body>
+
 </html>
